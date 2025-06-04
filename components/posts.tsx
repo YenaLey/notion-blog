@@ -1,18 +1,15 @@
-import Link from 'next/link'
-import posts from '../content/posts'
+import Link from "next/link";
+import posts from "../content/posts";
 
 export function BlogPosts() {
-
   return (
     <div>
       {posts
         .sort((a, b) => {
-          if (
-            new Date(a.date) > new Date(b.date)
-          ) {
-            return -1
+          if (new Date(a.date) > new Date(b.date)) {
+            return -1;
           }
-          return 1
+          return 1;
         })
         .map((post) => (
           <Link
@@ -31,5 +28,5 @@ export function BlogPosts() {
           </Link>
         ))}
     </div>
-  )
+  );
 }

@@ -1,5 +1,5 @@
-import Image from 'next/image'
-import { BlogPosts } from 'components/posts'
+import Image from "next/image";
+import { BlogPosts } from "components/posts";
 
 export default function Page() {
   return (
@@ -12,15 +12,13 @@ export default function Page() {
           height={100}
           className="rounded-full mr-4"
         />
-        <h1 className="text-2xl font-semibold tracking-tighter">
-          My Portfolio
-        </h1>
+        <h1 className="text-2xl font-semibold tracking-tighter">Yena.log</h1>
       </div>
       <p className="mb-4">
         {`Hello! This blog is created using `}
-        <a 
-          href="https://github.com/notionpresso" 
-          target="_blank" 
+        <a
+          href="https://github.com/notionpresso"
+          target="_blank"
           rel="noopener noreferrer"
           className="text-blue-600 hover:text-blue-800 underline font-medium transition duration-300 ease-in-out"
         >
@@ -34,5 +32,5 @@ export default function Page() {
         <BlogPosts />
       </div>
     </section>
-  )
+  );
 }

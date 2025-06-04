@@ -1,21 +1,18 @@
-'use client'
-import Link from 'next/link'
-import ThemeToggle from './theme'
+"use client";
+import Link from "next/link";
+import ThemeToggle from "./theme";
 
 const navItems = {
-  '/': {
-    name: 'home',
+  "/": {
+    name: "home",
   },
-  '/blog': {
-    name: 'blog',
+  "/blog": {
+    name: "blog",
   },
-  '/guide': {
-    name: 'guide',
+  "https://github.com/notionpresso": {
+    name: "github",
   },
-  'https://github.com/notionpresso': {
-    name: 'github',
-  },
-}
+};
 
 export function Navbar() {
   return (
@@ -35,14 +32,14 @@ export function Navbar() {
                 >
                   {name}
                 </Link>
-              )
+              );
             })}
           </div>
-          <div className='ml-auto'>
+          <div className="ml-auto">
             <ThemeToggle />
           </div>
         </nav>
       </div>
     </aside>
-  )
+  );
 }
