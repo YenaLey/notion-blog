@@ -1,5 +1,6 @@
-import post1 from '../notion-data/126ce18c-fd83-8023-9ad1-d0e1809b21c3.json'
-import post2 from '../notion-data/127ce18c-fd83-805c-bebd-d6772e18bf02.json'
+import post1 from "../notion-data/126ce18c-fd83-8023-9ad1-d0e1809b21c3.json";
+import post2 from "../notion-data/127ce18c-fd83-805c-bebd-d6772e18bf02.json";
+import post3 from "../notion-data/2084cc43-62cb-805f-ad8b-f090a590514f.json";
 
 const posts = [
   {
@@ -7,17 +8,27 @@ const posts = [
     slug: "api-design-in-bff",
     content: post1,
     date: "2023-10-22",
-    description: "Exploring the shift from domain-centric to data-centric API endpoints after introducing BFF. This article introduces BFF and DDD concepts, then proposes API endpoint design strategies in the context of the BFF pattern.",
-    image: undefined
+    description:
+      "Exploring the shift from domain-centric to data-centric API endpoints after introducing BFF. This article introduces BFF and DDD concepts, then proposes API endpoint design strategies in the context of the BFF pattern.",
+    image: undefined,
   },
   {
     title: "Naver Search Bar UX: Analysis and Implementation Guide",
     slug: "naver-search-bar-ux",
     content: post2,
     date: "2023-10-23",
-    description: "Explore the UX analysis of Naver's search bar and strategies for replicating its features. The post examines the UX triggers, selection of search results, and the refreshing of result lists. It also compares coding approaches for implementing search bar functionalities, aiming for a concise and effective execution.",
-    image: undefined
-  }
+    description:
+      "Explore the UX analysis of Naver's search bar and strategies for replicating its features. The post examines the UX triggers, selection of search results, and the refreshing of result lists. It also compares coding approaches for implementing search bar functionalities, aiming for a concise and effective execution.",
+    image: undefined,
+  },
+  {
+    title: "첫 번째 블로그 포스트",
+    slug: "first-post",
+    content: post3,
+    date: "2023-10-24",
+    description: "블로그를 시작하며...",
+    image: "https://www.notion.so/images/page-cover/webb2.jpg",
+  },
 ] as Post[];
 
 export default posts;
